@@ -5,7 +5,7 @@ import { menuForSubscription } from '@/server-actions/menuAction'
 import Header from './Header'
 import Footer from './Footer'
 
-const DashboardLayout = async ({children}) => {
+const DashboardLayout = async ({ children }) => {
 
   const session = await auth()
   // if (session.user?.subscriptionId) {
@@ -19,7 +19,7 @@ const DashboardLayout = async ({children}) => {
 
 
   return (
-    <main className="main" id="top">
+    <main className="main" id="top" style={{ backgroundColor: "var(--falcon-bg-navbar-glass)" }}>
       <div className="container-fluid" data-layout="container">
         <Sidebar />
         <div className="content">

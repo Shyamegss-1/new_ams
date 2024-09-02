@@ -1,6 +1,7 @@
 "use client"
 import React, { Suspense } from 'react'
 import { SidemenuSection } from './SidemenuSection'
+import Link from 'next/link';
 
 const SidebarLayout = ({ children }) => {
 
@@ -57,13 +58,12 @@ const SidebarLayout = ({ children }) => {
                                     Get your copy of <a href="#!">Falcon</a>
                                 </p>
                                 <div className="d-grid">
-                                    <a
+                                    <Link
                                         className="btn btn-sm btn-primary"
-                                        href="https://themes.getbootstrap.com/product/falcon-admin-dashboard-webapp-template/"
-                                        target="_blank"
+                                        href="/subscriptions"
                                     >
                                         Purchase
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

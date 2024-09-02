@@ -6,12 +6,10 @@ const NavItem = ({ item }) => {
   return (
     <li className="nav-item">
       <Link
-        className={`nav-link ${
-          item.children && item.children.length > 0 ? "dropdown-indicator" : ""
-        }`}
-        href={`${
-          item.children && item.children.length > 0 ? "#" + item.url : item.url
-        }`}
+        className={`nav-link ${item.children && item.children.length > 0 ? "dropdown-indicator" : ""
+          }`}
+        href={`${item.children && item.children.length > 0 ? "#" + item.url : item.url
+          }`}
         role="button"
         data-bs-toggle={
           item.children && item.children.length > 0 ? "collapse" : ""
@@ -20,10 +18,9 @@ const NavItem = ({ item }) => {
         aria-controls={item.url}
       >
         <div className="d-flex align-items-center">
-          <span className="nav-link-icon">
-            {/* <Icon iconClass="fa-solid fa-shopping-cart" size="xs" /> */}
-            <FontAwesomeIcon icon={item.icon || `fas fa-car`} />
-          </span>
+          {item.icon && <span className="nav-link-icon">
+            <FontAwesomeIcon icon={item.icon} />
+          </span>}
           <span className="nav-link-text ps-1">{item.name}</span>
         </div>
       </Link>
@@ -40,14 +37,14 @@ const NavItem = ({ item }) => {
 
 export const SidemenuSection = async () => {
   const menu = await prisma.menu.findMany({
-    where:{
-        parentId: null
+    where: {
+      parentId: null
     },
     select: {
       name: true,
       id: true,
       url: true,
-      icon:true,
+      icon: true,
       children: {
         select: {
           name: true,
@@ -58,7 +55,7 @@ export const SidemenuSection = async () => {
               name: true,
               id: true,
               url: true,
-              children:true
+              children: true
             },
           },
         },
