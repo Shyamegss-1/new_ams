@@ -67,7 +67,7 @@ const page = async () => {
                       data-bs-theme="light"
                     >
                       <p className="text-white">
-                        Don't have an account?
+                        {"Don't have an account?"}
                         <br />
                         <Link
                           className="text-decoration-underline link-light"
