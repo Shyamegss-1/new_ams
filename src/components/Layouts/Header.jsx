@@ -697,8 +697,8 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="notification-body">
                                                                     <p className="mb-1">
-                                                                        <strong>Emma Watson</strong> replied to your
-                                                                        comment : "Hello world 😍"
+                                                                        <strong>Emma Watson</strong> {`replied to your
+                                                                        comment : "Hello world 😍"`}
                                                                     </p>
                                                                     <span className="notification-time">
                                                                         <span
@@ -728,7 +728,7 @@ const Header = () => {
                                                                 <div className="notification-body">
                                                                     <p className="mb-1">
                                                                         <strong>Albert Brooks</strong> reacted to{" "}
-                                                                        <strong>Mia Khalifa's</strong> status
+                                                                        <strong>{"Mia Khalifa's"}</strong> status
                                                                     </p>
                                                                     <span className="notification-time">
                                                                         <svg
@@ -774,8 +774,8 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="notification-body">
                                                                     <p className="mb-1">
-                                                                        The forecast today shows a low of 20℃ in
-                                                                        California. See today's weather.
+                                                                        {`The forecast today shows a low of 20℃ in
+                                                                        California. See today's weather.`}
                                                                     </p>
                                                                     <span className="notification-time">
                                                                         <span
@@ -808,8 +808,8 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="notification-body">
                                                                     <p className="mb-1">
-                                                                        <strong>University of Oxford</strong> created an
-                                                                        event : "Causal Inference Hilary 2019"
+                                                                        <strong>University of Oxford</strong> {`created an
+                                                                        event : "Causal Inference Hilary 2019"`}
                                                                     </p>
                                                                     <span className="notification-time">
                                                                         <span
@@ -842,9 +842,9 @@ const Header = () => {
                                                                 </div>
                                                                 <div className="notification-body">
                                                                     <p className="mb-1">
-                                                                        <strong>James Cameron</strong> invited to join the
+                                                                        <strong>James Cameron</strong> {`invited to join the
                                                                         group: United Nations International Children's
-                                                                        Fund
+                                                                        Fund`}
                                                                     </p>
                                                                     <span className="notification-time">
                                                                         <span

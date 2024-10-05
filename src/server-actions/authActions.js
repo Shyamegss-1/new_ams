@@ -57,8 +57,17 @@ export const loginHandler = async ({ username, password }) => {
       redirect: true,
       callbackUrl: "/",
     });
+    return {
+      status: true,
+      message: "Logged in successfully",
+      res,
+    };
   } catch (error) {
     const err = error.cause;
-    return String(err);
+    if (err) {
+      return String(err);
+    } else {
+      return String(error.message || error);
+    }
   }
 };
