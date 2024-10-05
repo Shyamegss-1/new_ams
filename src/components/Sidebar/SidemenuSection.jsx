@@ -61,20 +61,7 @@ export const SidemenuSection = async () => {
         },
       },
     },
-    //   include: {
-    //     children: {
-    //       include: {
-    //         children: {
-    //           include: {
-    //             children: true,
-    //           },
-    //         },
-    //       },
-    //     },
-    //   },
   });
-
-  console.log(menu, "res");
 
   return menu.map((item, index) => <NavItem key={index} item={item} />);
 };

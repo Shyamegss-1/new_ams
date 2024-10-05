@@ -11,8 +11,6 @@ const ToggleButton = () => {
             htmlElement.classList.add('navbar-vertical-collapsed');
             // setIsCollapsed(true);
         }
-        console.log('toggle clicked');
-        // toggle the menu open or closed
     }
     return (
         <div className="toggle-icon-wrapper">
